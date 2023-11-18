@@ -1,0 +1,79 @@
+/* 
+Colors used : 
+Primary Color (blue) : #40566A
+Secondary Color (Green) : #B6D7AB
+Highlights (light Blue) : #86AADF
+Highlights (Light Grey : #A1A1A1
+
+Highlight (dark Grey) : #575757
+Primary Color (Deep Blue) : #40566A
+Seconday (dusty rose) : #DCAE96
+
+
+Typography 
+Headings : Asap 32pt
+Sub Headings : Carme 24pt
+Body Text : Heebo 16pt
+*/
+
+body {
+    background-color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: black;
+}
+h1,h2,h3.h4{
+    line-height: 1.4;
+}
+h1 {
+    font-family: 'Asap', sans-serif;
+font-family: 'Heebo', sans-serif;
+    font-size: 2.15em;
+    font-weight: 700;
+}
+h3{
+    font-family: 'Asap', sans-serif;
+font-family: 'Carme', sans-serif;
+font-family: 'Heebo', sans-serif;
+    font-size: 1.15em;
+    font-family: 400;
+}
+h4{
+    font-size: 1em;
+  font-weight: 400;
+}
+img {
+    width: 100%;
+  }
+  a {
+    color:#40566A;
+    text-decoration: none; /* No underlining CHANGE COLOR*/
+  }
+ 
+  a:visited { /* visited link CHANGE COLOR */
+    color: #575757;
+  }
+  a:hover {
+    color: #DCAE96 ;
+    text-decoration: underline; /* Underlining when hovering over a link CHANGE COLOR*/
+    
+  }
+  a:active { /* selected link CHANGE COLOR*/
+    color: #575757;
+  }
+  a:hover,
+a:focus {
+  color: #DCAE96 ;
+  text-decoration: underline;
+}
+.rm-button {
+    display: inline-block; 
+  background-color: #40566A;
+  color: #DCAE96; 
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px #1a232b; 
+}
