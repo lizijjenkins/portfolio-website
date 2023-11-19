@@ -68,12 +68,29 @@ a:focus {
   color: #DCAE96 ;
   text-decoration: underline;
 }
-.rm-button {
+.button.read.more {
     display: inline-block; 
-  background-color: #40566A;
+  background-color:#40566A ;
   color: #DCAE96; 
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px #1a232b; 
+  transition: 0.2s opacity;
 }
+.button.read.more:hover{
+    opacity: 0.8; 
+    text-decoration: none;
+  }
+  .button.read.more:active{
+    color:#40566A ;
+  }
+  .button.contact {
+    background-color: transparent;
+    color:#40566A ;
+    text-transform: capitalize;
+  }
+  .button.contact:hover {
+    background-color: #DCAE96;
+    color: #40566A;
+  }
