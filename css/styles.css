@@ -24,7 +24,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
-    color: black ;
+    color: #40566A  ;
 }
 h1,h2,h3.h4{
     line-height: 1.4;
@@ -73,16 +73,22 @@ a:focus {
 .button.read.more {
     display: inline-block; 
   background-color:#40566A ;
-  color: #DCAE96; 
+  color: white; 
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 3px; 
   border-bottom: 2px #1a232b; 
   transition: 0.2s opacity;
 }
 .button.read.more:hover{
-    opacity: 0.8; 
-    text-decoration: none;
+    border-color: #40566A;
+    color:#DCAE96 ; 
+    background-color: transparent;
+    text-decoration: underline;
+    text-transform: uppercase;
+    border:3px solid #40566A;
+    opacity: 0.8;
   }
   .button.read.more:active{
     color:#40566A ;
@@ -93,8 +99,9 @@ a:focus {
     text-transform: capitalize;
   }
   .button.contact:hover {
-    background-color: #DCAE96;
-    color: #40566A;
+    background-color: transparent;
+    color: #DCAE96 ;
+    text-decoration: underline;
   }
   header {
       padding: 10px;
@@ -106,9 +113,16 @@ a:focus {
     padding: 0 15px;
   }
   .row {
+    padding: 0 15px;
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    border-bottom: 2px solid #DCAE96;
   }
-  #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+  .row-pic{
+    margin: 25px 0;}
+  .row-ani{width: 100%;
+    max-width: 100%;
+    height: auto;}
+  #work .row { padding-bottom: 25px;  }
   #hero h1 {
     text-align: center
   }
@@ -118,13 +132,12 @@ a:focus {
     width: 100%;
   }
   .logo {
-    max-width: 250px;
+    max-width: 150px;
   }
   header {
-    background-color: white;
     text-align: center;
     padding: 10px 0;
-    position: relative ;
+    position: relative;
 	  width: [object Object]px; 
 	height: [object Object]px; 
 	background: #F8F8F8; 
@@ -150,7 +163,124 @@ nav{
   display: inline-block;
   width: 100%;
 }
-main {
-  padding-top: 133px;
+
+/*Media Queries*/
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    float: bottom;
+    margin-top: 4px;
+  }
+  body{
+    font-size: 18px
+  }
+  #hero{
+    text-align: center;
+  }
+  #hero span {
+    display: block;
+  }
+  #work {
+    text-align: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+@media only screen and (min-width: 1024px) {
+
+.col-md-7 {
+  width: 60%;
+}
+.col-md-5 {
+  width: 40%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.container{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  }
+@media only screen and (min-width: 1440px) {
+}
+@media only screen and (min-width: 1920px) {
 }
 
+/*svg animations */
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/* WHY WONT THIS WORK */
+div.topLeftBorders a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:hover:before
+{
+    height: 100%;
+}
+
+div.topLeftBorders a:hover:after
+{
+    opacity: 0;
+    top: 100%;
+} 
