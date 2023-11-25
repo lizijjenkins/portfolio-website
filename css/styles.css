@@ -123,8 +123,8 @@ a:focus {
     height: auto;}
   #work .row { padding-bottom: 25px;  }
   #hero h1 {
-    text-align: center
-    padding-top:250%
+    text-align: center;
+    padding-top: 200px;
   }
   #hero {
     padding: 20px 0;
