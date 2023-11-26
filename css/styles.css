@@ -29,6 +29,16 @@ body {
 h1,h2,h3.h4{
     line-height: 1.4;
 }
+h4.bold {
+  font-weight: bold;
+}
+h5.bold {
+  font-weight: bold;
+}
+h5{
+  font-size: .85 em;
+  font-weight: 400;
+}
 h1 {
     font-family: 'Asap', sans-serif;
 font-family: 'Heebo', sans-serif;
@@ -72,23 +82,22 @@ a:focus {
 }
 .button.read.more {
     display: inline-block; 
-  background-color:#40566A ;
-  color: white; 
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px; 
-  border-bottom: 2px #1a232b; 
-  transition: 0.2s opacity;
+    background-color:#40566A ;
+    border: 2px solid #40566A;
+    color: white; 
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 25px;
+    transition: 0.2s opacity;
+    border-radius: 8px;
 }
 .button.read.more:hover{
     border-color: #40566A;
     color:#DCAE96 ; 
     background-color: transparent;
     text-decoration: underline;
-    text-transform: uppercase;
     border:3px solid #40566A;
-    opacity: 0.8;
   }
   .button.read.more:active{
     color:#40566A ;
@@ -103,18 +112,42 @@ a:focus {
     color: #DCAE96 ;
     text-decoration: underline;
   }
+ 
   header {
-      padding: 10px;
-      border-bottom: 2px solid #DCAE96 ;
+      padding: 10px 0 4px;
   }
   /* Layout Styling*/
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+  }
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
   .container {
     padding: 0 15px;
   }
   .row {
     padding: 0 15px;
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
-    border-bottom: 2px solid #DCAE96;
   }
   .row-pic{
     margin: 25px 0;}
@@ -126,44 +159,57 @@ a:focus {
     text-align: center;
     padding-top: 200px;
   }
+  #hero picture {
+    padding-top: 500px;
+  }
   #hero {
     padding: 20px 0;
     display: inline-block;
     width: 100%;
   }
   .logo {
-    width: 100px;
+    max-width: 100px;
     height: auto;
   }
+  .icon { 
+    width: 400px;
+    height: auto;
+  }
+  .profile { 
+    width: 400px;
+    height: auto;
+  }
+ 
   header {
-    text-align: center;
     padding: 10px 0;
     position: fixed;
 	  width: 100%;
     top: 0;
-	background: #F8F8F8; 
 	border: solid #BDBDBD 0; 
-	box-shadow: 5px 5px 37px rgba(64, 86, 106, 0.7)  ; 
-	-webkit-box-shadow: 5px 5px 37px rgba(64, 86, 106, 0.7)  ; 
-	-moz-box-shadow: 5px 5px 37px rgba(64, 86, 106, 0.7)  ;
+	background-color: white;
 }
-  nav > ul {
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+footer { 
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
-  nav > ul > li {
-    display: inline-block;
-  }
+  
   nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
   }
-nav{
-  display: inline-block;
-  width: 100%;
-}
 .socail{ 
   height: 40px;
   width: auto;
@@ -171,12 +217,22 @@ nav{
 
 /*Media Queries*/
 @media only screen and (min-width: 640px) {
-header {
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  header {
   text-align: unset;
   padding: 20px 0 13px;
   }
-
-  nav {
+  nav > ul > li {
+    display: inline-block;}
+  nav > ul {
+      margin: 1em 0;
+  }
+  nav{
     width: auto;
     float: right;
     float: bottom;
@@ -205,6 +261,9 @@ header {
     content: "";
     clear: both;
     display: table;
+  }
+  .logo{
+    width: 100px;
   }
 }
 @media only screen and (min-width: 1024px) {
