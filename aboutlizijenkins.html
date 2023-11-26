@@ -17,8 +17,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <Body>
-        <header class="container">
-            <div>
+        <header>
+            <div class="container">
                 <img class="logo" src="img/logo.PNG" alt="Logo">
             <nav>
                 <ul type="square">
@@ -26,15 +26,23 @@
                     <li><a href="aboutlizijenkins.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+             </nav>
+            </div>
         </header>
             <main>
+                <div id="hero">
+                    <div class="container">
+                        <Div class="profile">
+                            <picture> 
+                                <source srcset="img/Profile.PNG" media="(max-width:767px)">
+                                <img src="img/Profile.PNG" alt="Profile Picture">
+                              </picture>
+                              </Div>
+                    </div>
+                  </div>
                 <div id="about-me">
                     <div class="container">
-                        <picture> 
-                            <source srcset="img/Profile.PNG" media="(max-width:767px)">
-                            <img src="img/Profile.PNG" alt="Profile Picture">
-                          </picture>
+                       
                             <div>
                                 <h3>My Story</h3>
                       <p>
@@ -82,28 +90,29 @@
                     </div>
                 </div>
             </main>
-            </div>
     </Body>
-    <Footer>
+    <Footer id="contact">
         <div class="container">
-            <h2> Get in Touch</h2>
-            <p>
-                Do you like my work and want to discuss opportunities? Please get in touch. 
-              </p>
+          <div class="row">
+            <h3> Let's Connect</h3>
+            <h5>thelizijenkins@gmail.com</h5>
               <div>
-                <a href="mailto:thelizijenkins@gmail.com" class="button contact">Email Me</a>
-                <div>
-                    
+                <a href="mailto:thelizijenkins@gmail.com" class="button contact">
+                  <img class="socail" src="img/email.svg" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/lizi-jenkins-0b0a35235/" class="button contact">
+                    <img class="socail" src="img/linkedin.svg" alt="Linkedin">
+                </a>
+                <a href="https://www.behance.net/gallery/181220731/The-Science-Spot-Case-Study/modules/1023936715" class="button contact">
+                  <img class="socail" src="img/behance.svg" alt="behance">
+              </a>
               </div>
               <div>
-              <a href="https://www.linkedin.com/in/lizi-jenkins-0b0a35235/" class="button contact">
-                <img class="socail" src="img/linkedin.svg" alt="Linkedin">
-            </a>
-            </div>
-                <p>Copyright Lizi Jenkins 2023</p>
-                </div>
-                <footer id="contact"></footer>
+                <h6>Copyright Lizi Jenkins 2023</h6>
+              </div>
+          </div>
         </div>
       </Footer>
-      <script src="js/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </html>
