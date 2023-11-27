@@ -68,7 +68,7 @@ img {
     color:#40566A ;
   }
   a:hover {
-    color: #DCAE96 ;
+    color: #40566A ;
     text-decoration: underline; /*Underlining when hovering over a link CHANGE COLOR*/
     
   }
@@ -121,11 +121,12 @@ a:focus {
     position: relative;
   }
   .navtoggle li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
     font-size: 20px;
     padding-right: 0;
+  }
+  nav {
+    float: right;
+    margin-top: 25px;
   }
   .navtoggle.responsive li  {
     display: block;
