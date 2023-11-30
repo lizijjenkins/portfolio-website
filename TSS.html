@@ -13,20 +13,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Asap&family=Carme&family=Heebo&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header>
-  <div class="container">
-      <img class="logo" src="img/logo-min.png" alt="Logo">
-  <nav>
-      <ul type="square">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="aboutlizijenkins.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-      </ul>
-  </nav>
-</div>
-</header>
+<Body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img class="logo"src="img/logo-short.PNG" alt="Logo">
+        </a>
+        <nav>
+          <ul type="square">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="aboutlizijenkins.html">About</a></li>
+            <li><a href="Files/JenkinsResume.pdf">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 <main>
   /* how to fix padding issue 30-41 */
+  <div id="hero">
+    <div class="container">
+    </div>
+  </div>
   <div id="hero">
     <div class="container">
     </div>
@@ -43,105 +54,100 @@
     <div class="container">
       <div class="row-pic">
         <div class="column col-md-6 col-lg-7">
-      <picture>
-        <source srcset="img/TSS/tss-icon.PNG" media="(max-width:767px)">
-        <img class= "icon" src="img/TSS/tss-Icon.PNG" alt="Science Spot Cover">
-      </picture>
+          <picture>
+            <source srcset="img/TSS/tss-icon.PNG" media="(max-width:767px)">
+            <img class= "icon" src="img/TSS/tss-Icon.PNG" alt="Science Spot Cover">
+          </picture>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-  <div class="row">
-    <div class="column col-md-6 col-lg-5">
-    <h2>The Science Spot</h2>
-    <p>
-      <h4>The Science Spot provides educators one spot to access the resources, community, and expert advise they need to be an outstanding educator </h4> 
-     </p>
-     <p><h5 class="bold"> My Role </h5>
-    <h5>User Reseach, IA/UX/UI Desing, Wireframing, Prototyping, Testing</h5></p>
-    <p><h5 class="bold"> Tools </h5>
-      <h5>Miro, Helio, Figma, Canva, Balsamiq, Typeform, Optimal Workshop</h5></p>
-    </div>
-    </div>
-    </div>
-    <div id="work">
-      <div class="container">
-        <div class="row-pic">
-          <div class="column col-md-6 col-lg-7">
-        <picture>
-          <source srcset="img/TSS/tss-main.png" media="(max-width:767px)">
-          <img class= "icon" src="img/TSS/tss-main.png" alt="Science Spot Cover Preview">
-        </picture>
-          </div>
-        </div>
+    <div class="row">
+      <div class="column col-md-6 col-lg-5">
+        <h2>The Science Spot</h2>
+        <p>
+          <h4>The Science Spot provides educators one spot to access the resources, community, and expert advise they need to be an outstanding educator </h4> 
+        </p>
+        <p><h5 class="bold"> My Role </h5>
+          <h5>User Reseach, IA/UX/UI Desing, Wireframing, Prototyping, Testing</h5>
+        </p>
+        <p><h5 class="bold"> Tools </h5>
+          <h5>Miro, Helio, Figma, Canva, Balsamiq, Typeform, Optimal Workshop</h5>
+        </p>
       </div>
-    </div>
-    <div id="work">
-      <div class="container">
-        <div class="row">
-          <div class="column col-md-6 col-lg-5">
-             <h3>Case Foundation</h3>
-             <p><h4> Science educators need a way to find premade lessons and teaching guided for specific standards because they wish to give thier studnets the best education possible</h4></p>
-          </div>
-        </div>
-      </div>
-    </div>   
-    <div id="work">
-      <div class="container">
-        <div class="row-pic">
-          <div class="column col-md-6 col-lg-7">
-        <picture>
-          <source srcset="img/TSS/tss-design-process.png" media="(max-width:767px)">
-          <img class= "icon" src="img/TSS/tss-design-process.png" alt="Design process">
-        </picture>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="work">
-      <div class="container">
-        <div class="row">
-          <div class="column col-md-6 col-lg-5">
-             <h3>Design Process</h3>
-             <p><h5> I used the UX Design Process as a guide while completing this project. I started the discovery phase where my focus was research and getting to know my problem area. This lead me to the concepting phase where I determined features and brainstormed solutions. Lastly I refined my project with Prototyping and testing. </h5></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-
-
-
-             <div>
-     <a href="https://www.behance.net/gallery/181220731/The-Science-Spot-Case-Study/modules/1023936715" class="read more button"> Behance Portfolio</a>
-    </div>
-    </div> 
-</div>
     </div>
   </div>
-</div>
+  <div id="work">
+    <div class="container">
+      <div class="row-pic">
+        <div class="column col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/TSS/tss-main.png" media="(max-width:767px)">
+            <img class= "icon" src="img/TSS/tss-main.png" alt="Science Spot Cover Preview">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="work">
+    <div class="container">
+      <div class="row">
+        <div class="column col-md-6 col-lg-5">
+          <h3>Case Foundation</h3>
+          <p><h4> Science educators need a way to find premade lessons and teaching guided for specific standards because they wish to give thier studnets the best education possible</h4>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>   
+  <div id="work">
+    <div class="container">
+      <div class="row-pic">
+        <div class="column col-md-6 col-lg-7">
+          <picture>
+            <source srcset="img/TSS/tss-design-process.png" media="(max-width:767px)">
+            <img class= "icon" src="img/TSS/tss-design-process.png" alt="Design process">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="work">
+    <div class="container">
+      <div class="row">
+        <div class="column col-md-6 col-lg-5">
+          <h3>Design Process</h3>
+          <p><h5> I used the UX Design Process as a guide while completing this project. I started the discovery phase where my focus was research and getting to know my problem area. This lead me to the concepting phase where I determined features and brainstormed solutions. Lastly I refined my project with Prototyping and testing. </h5></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "container">
+    <div class="row">
+      <a href="https://www.behance.net/gallery/181220731/The-Science-Spot-Case-Study/modules/1023936715" class="read more button"> Behance Portfolio</a>
+    </div>
+  </div> 
 </main>
 <Footer id="contact">
   <div class="container">
     <div class="row">
       <h3> Let's Connect</h3>
       <h5>thelizijenkins@gmail.com</h5>
-        <div>
-          <a href="mailto:thelizijenkins@gmail.com" class="button contact">
-            <img class="socail" src="img/email.svg" alt="Email">
-          </a>
-          <a href="https://www.linkedin.com/in/lizi-jenkins-0b0a35235/" class="button contact">
-              <img class="socail" src="img/linkedin.svg" alt="Linkedin">
-          </a>
-          <a href="https://www.behance.net/gallery/181220731/The-Science-Spot-Case-Study/modules/1023936715" class="button contact">
-            <img class="socail" src="img/behance.svg" alt="behance">
+      <div>
+        <a href="mailto:thelizijenkins@gmail.com" class="button contact">
+          <img class="socail" src="img/email.svg" alt="Email">
         </a>
-        </div>
-        <div>
-          <h6>Copyright Lizi Jenkins 2023</h6>
-        </div>
+        <a href="https://www.linkedin.com/in/lizi-jenkins-0b0a35235/" class="button contact">
+          <img class="socail" src="img/linkedin.svg" alt="Linkedin">
+        </a>
+        <a href="https://www.behance.net/gallery/181220731/The-Science-Spot-Case-Study/modules/1023936715" class="button contact">
+          <img class="socail" src="img/behance.svg" alt="behance">
+        </a>
+      </div>
+      <div>
+        <h6>Copyright Lizi Jenkins 2023</h6>
+      </div>
     </div>
   </div>
 </Footer>

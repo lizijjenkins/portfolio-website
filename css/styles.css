@@ -68,7 +68,7 @@ img {
     color:#40566A ;
   }
   a:hover {
-    color: #40566A ;
+    color: #DCAE96 ;
     text-decoration: underline; /*Underlining when hovering over a link CHANGE COLOR*/
     
   }
@@ -80,6 +80,7 @@ a:focus {
   color: #DCAE96 ;
   text-decoration: underline;
 }
+
 .button.read.more {
     display: inline-block; 
     background-color:#40566A ;
@@ -137,9 +138,7 @@ a:focus {
   .navtoggle.responsive li  {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid rgba(255,127,80,0.5);
   }
-  
   .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
   }
@@ -189,7 +188,7 @@ a:focus {
 	border: solid #BDBDBD 0; 
 	background-color: white;
 }
-.navtoggle li:not(:last-child) {
+.navtoggle.responsive li:not(:last-child) {
   display: none;
 }
 footer { 
@@ -202,7 +201,7 @@ footer {
 nav > ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 1em 0;
   }
   
   nav > ul > li > a {
@@ -215,7 +214,9 @@ nav > ul {
   height: 40px;
   width: auto;
 }
-
+main{
+  padding-top: 58px;
+}
 /*Media Queries*/
 @media only screen and (min-width: 640px) {
   .navtoggle li:not(:last-child) {
