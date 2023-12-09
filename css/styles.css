@@ -162,10 +162,15 @@ nav {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
+  width: 100%;
 }
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
 .container {
@@ -231,7 +236,7 @@ header {
 }
 
 .navtoggle.responsive li:not(:last-child) {
-  display: none;
+  display: block;
 }
 
 footer {
@@ -262,6 +267,14 @@ nav > ul > li > a {
 
 main {
   padding-top: 58px;
+}
+
+.about-hero {
+  padding-top: 120px !important;
+}
+
+#about-me {
+  padding-bottom: 400px;
 }
 
 /* Media Queries */
